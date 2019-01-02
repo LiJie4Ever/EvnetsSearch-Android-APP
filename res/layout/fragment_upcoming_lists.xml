@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme"
+    tools:context=".Fragment.UpcomingEventsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/events_orderBy_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/orderByType"
+            android:layout_weight="1"/>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/events_orderBy_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/orderByOrder"
+            android:layout_weight="1"
+            android:clickable="false"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/upcoming_events_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Record"
+            android:gravity="center"
+            android:id="@+id/upcoming_events_noInfo"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

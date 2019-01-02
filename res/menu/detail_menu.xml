@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.MainDetailsActivity">
+
+    <item
+        android:id="@+id/menu_twitter"
+        android:title="shareToTwitter"
+        android:icon="@mipmap/twitter_ic"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"/>
+
+    <item
+        android:id="@+id/menu_favorite"
+        android:title="like"
+        android:icon="@drawable/heart_fill_white"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="2"/>
+
+</menu>
